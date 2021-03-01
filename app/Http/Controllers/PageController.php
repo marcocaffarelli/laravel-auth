@@ -6,8 +6,16 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function index(){
+    public function home(){
         return view('guests.index');
+    }
+
+    public function index(){
+        return view('guests.posts.index');
+    }
+
+    public function blog(){
+        return view('guests.blog');
     }
 
     public function about(){
